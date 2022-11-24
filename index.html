@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="bmi-container">
+  <h1 class="heading">BMI Calculator</h1>
+  <p class="description">Body mass index(BMI) is a value derived from the mass and height of a person.</p>
+  
+    <div class="weight">
+      <p> Please enter your current weight in kg.</p>
+      <input type="number" name="weight-input" class="clear" id="weight-input" onclick="document.getElementById('weight-input').value= ''">
+      <p id="error">!!! Please enter a valid weight</p>
+    </div>
+    <div class="height">
+      <p> Please enter your current height in m.</p>
+      <input type="number" name="height-input" class="clear" id="height-input" onclick="document.getElementById('height-input').value= ''">
+      <p id="error">!!! please enter a valid height</p>
+    </div>
+    <div class="button-container">
+
+      <button id="calculate" onclick="bmiCalculator()">Calculate</button>
+      <button id="reset" onclick="window.location.reload();">Reset</button>
+
+    </div>
+    <textarea name="result"  class="clear" id="result" onclick="document.getElementById('result').value= ''" cols="50" rows="2" readonly ></textarea>
+
+    <p id="clear-desc">!!! input fields clear apon reclicking inside them</p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

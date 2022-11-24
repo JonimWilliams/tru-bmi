@@ -1,0 +1,161 @@
+/* global Selectors */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  overflow:hidden;
+  
+}
+p{
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+textarea{
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+  
+
+}
+
+button{
+  padding: 0.5rem;
+  width: 5rem;
+  background-color:rgb(133, 144, 153) ;
+  color: white;
+  border-radius: 1.5rem;
+  text-align: center;
+
+}
+button:hover{
+  border: 4px maroon solid;
+  padding: 0.7rem;
+}
+
+/* ID selectors */
+#bmi-container{
+  margin: 5rem auto;
+ border: 0.5rem maroon solid;
+ width: 35rem;
+ 
+}
+#error{
+  margin-top: 0.7rem;
+  color: red;
+  visibility: hidden;
+}
+#height-input{
+  width: 3rem;
+}
+#weight-input{
+  width: 3rem;
+}
+
+#clear-desc{
+  visibility: hidden;
+}
+/* #reset{
+  display: none;
+} */
+
+/* class selectors */
+.button-container{
+  margin-bottom: 3.5rem;
+}
+
+.weight{
+  margin: 1.5rem;
+}
+.height{
+  margin: 1.5rem;
+}
+.heading{
+  color: rgb(47, 111, 167);
+  font-weight: 800;
+}
+.description{
+color: rgb(133, 144, 153);
+font-weight: 500;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    #bmi-container{
+    margin-top: 5rem;
+    width: 100vw;
+    padding: 0  0 1rem;
+    }
+    #height-input{
+      width: 3rem;
+      padding: 0.3rem 0;
+     }
+    #weight-input{
+      width: 3rem;
+      padding: 0.3rem 0;
+      }
+    #error{
+      margin-top: 0.7rem;
+      color: red;
+      visibility: hidden;
+      }
+    .description{
+      margin: 0 0 0 1.5rem;
+      text-align: center;
+      align-items: center;
+      justify-items: center;
+      width: 20rem;
+      
+      }
+      .weight{
+        margin: 1rem;
+      }
+      .height{
+        margin: 1rem;
+      }
+
+      textarea{
+        margin-bottom: 1rem;
+      }
+      button{
+        padding: 0.7rem;
+        
+      }
+      button:hover{
+        
+        padding: 0.9rem;
+      }
+
+  
+  }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  
+  
+  }
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+ 
+  
+  }
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+  
+  
+  }
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+
+  
+  
+  }
+@media only screen and  (max-width: 1200px) {
+
+  
+  
+  }
